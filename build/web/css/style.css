@@ -1,0 +1,243 @@
+ html,body {
+    background: #ffffff;
+    font: 14px/20px Arial, sans-serif;
+    font-family: arial, verdana, sans-serif;
+    color: #fff;
+    margin:0px;
+
+}
+
+/****************EDITADO WEISSMAN************/
+
+
+
+/************ caracteristicas de textos    ******/
+header, header img
+{
+    position:relative;
+    max-width: 100%;
+   
+    display: block;
+    width: auto;
+
+}
+
+.requerido{
+    color: #fd5e08;
+    
+    margin: 0;
+}
+
+.verde{
+    font-weight: bold;
+    color: #00a650;
+}
+.naranja{
+    font-weight: bold;
+    color: #f5821f;
+}
+label{
+    font-size: 16px;
+    color: #7e9289;
+    
+    
+}
+.labelTabla{
+    font-size: 16px;
+    width:120px;
+}
+.glyphicon-pencil, .glyphicon-remove{
+    font-size: 24px;
+    color: #C3EA03;
+}
+.glyphicon-remove{
+    color: #FF0101;
+}
+
+/***********************************************/
+
+
+/***********  divisiones   ************************/
+#menu-botones{
+    
+    padding: 10px;
+}
+.recuadro{
+    border: 1px solid #7e9289;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+    height: auto;
+    margin: 20px;
+}
+.desactivar{
+    background-color: #e5efbf;
+
+}
+.blanco{
+    background-color: #F0F9FD;
+}
+
+.btn-menu{
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    color: #029852;
+    box-shadow: 1px 1px 1px #00a650;
+    border-radius: 10px;
+}
+
+.usuario{
+    position: absolute;
+    padding: 20%;
+
+}
+
+.btn-group-vertical{
+    margin-top: 25%;
+}
+
+.portada{
+     width: 100%;
+    max-width: 100%;
+    display: block;
+    width: auto;
+}
+
+/******** caracteristicas de posicionamiento *******/
+.center-block{
+    margin-top: 10%;
+}
+.z-index-2{
+    position: absolute;
+    z-index: 2;
+}
+.z-index-3{
+    
+    z-index: 3;
+}
+.z-index--1{
+    z-index: -1;
+}
+/************************************************/
+
+/******** propiedades de la tabla ******/
+tr{
+    border-top-color:#74ce9f;
+    border-top-style: dotted;;
+    height: 0px;
+  
+}
+
+td:hover, a:hover, a label:hover{
+    font-size: 110%;
+    cursor: pointer;
+}
+
+.tablaP th{
+   background-color: #0FB0D4;
+   font-weight: bold;
+   font-size: 12px;
+   color: #fff;
+   text-align: center;
+   
+}
+.tablaP td:hover{
+    font-size: 12;
+    
+}
+.tablaP tr{
+    border-style: none;
+}
+.tablaP tr.negra, td.negra{
+    font-weight: bold;
+    vertical-align: middle;
+    text-align: left;
+}
+
+
+/************************************************/
+
+
+
+/************************************************/
+
+
+
+.bloque{
+     margin: 0px;
+    width: 200px;
+    height: 500px;
+    float:left;
+    position: absolute;
+    z-index: 1;
+    max-height: 130%;
+}
+
+
+.icon_box
+{
+    float:right;
+    width:auto;
+    height: auto;
+    padding:15px;
+    display: inline-block
+    
+}
+
+.icon_box img
+
+{
+   height: 40px;
+   width: 40px;
+}
+
+footer
+{
+    background-color: #25B262;
+    color:#2f3036;
+    width:100%;
+    display: block;
+    margin-top:15px;
+    padding:0px;
+    border:0px;
+    
+    position: relative;
+    height:80px;
+}
+
+
+.boton1{
+    border: none;
+    position: absolute;
+    left: 63%;
+    width:10%;
+    z-index: 2;
+    max-width:1300px;
+    top: 33%;
+}
+.boton2{
+    border: none;
+    width:10%;
+    max-width:1300px;
+    position: absolute;
+    left: 77%;
+    z-index: 2;
+    top: 33%;
+}
+
+
+
+
+
+
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px){
+   
+    .usuario{
+        padding: 10%;
+    }
+}

@@ -1,0 +1,122 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon"  href="../images/ico.png">
+        <title>Proyecto Palma</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <script type="text/javascript" src="../js/bootstrap.js"></script>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+         <script src="../js/jquery-1.8.3.min.js"></script>
+        
+    </head>
+
+    <body>
+        
+        
+        <div class="container-fluyd">
+                <header>
+                    <button class="btn btn-success btn-lg boton1" onclick="location.href='../jsp/registroPalmicultor.jsp'">
+                          Registro
+                        </button>
+                   
+						
+						<button class="btn btn-success btn-lg boton2" data-toggle="modal" data-target="#myModal">
+						  iniciar sesion
+						</button>
+                    <div >
+                        
+                        <img  src="../images/logo.png"   class=" row_header"/>
+                    </div>
+                    
+                </header>
+                    
+                          
+                <div class="content">
+                  
+                    
+		    
+                    
+		        
+			
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="active"><a href="#">INICIO </a></li>
+                            <li><a href="#" role="tab" data-toggle="tab">NOSOTROS</a></li>
+                            <li><a href="#"role="tab" data-toggle="tab">NOTICIAS</a></li>
+                            <li><a href="http://www.ufps.edu.co/ufps/index.php">UFPS</a></li>
+                            <li><a href="http://ingsistemas.ufps.edu.co/">ING SISTEMAS UFPS</a></li>
+                          
+                         </ul>
+                        <div ><img class="portada" src="../images/portada.png"></div>
+                    
+                    
+
+                   
+                </div>
+                <footer>
+            
+            <div class="icon_box"> <!-- redes sociales-->
+          
+               <a href="http://ingsistemas.ufps.edu.co/"> <img src="../images/is-icon.png"/></a>
+               <a href="http://www.ufps.edu.co/ufps/index.php"><img src="../images/ufps-icon.png"/></a>
+               
+                
+            </div>
+            
+        </footer>
+
+            </div>
+
+							
+
+			
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      
+        <form action="../jsp/validarSesion.jsp" method="post">
+                        <div class="recuadro ">  
+							<button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span></button>
+                                <center><h2 class="verde">Inicio Sesion</h2></center>
+                                
+                                
+                                <label>Documento<label class="requerido">*</label></label>
+                                <input type="text" id="documento" name="documento" class="form-control" 									placeholder="Documento" required><br>
+
+
+                                <label>Contraseña<label class="requerido">*</label></label>
+                                <input type="password" id="clave" name="clave" class="form-control" 									placeholder="Contraseña" required><br>
+
+                                <center><input class="btn btn-success" type="submit" value="Ingresar"></center>
+                                <br>
+                                
+
+                        
+                        </div>   
+                    </form> 
+      </div>
+      
+    </div>
+  </div>
+
+
+
+
+
+       
+
+        
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js"></script>
+            
+    </body>
+
+</html>

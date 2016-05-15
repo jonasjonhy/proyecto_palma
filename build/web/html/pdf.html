@@ -1,0 +1,143 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 5.0//ES">
+<html lang="es">
+    <head>
+        <link rel="shortcut icon"  href="../images/ico.png">
+        <title>Reporte PDF</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+        <script type="text/javascript">
+            google.load("visualization", "1", {packages: ["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ['Task', 'Hours per Day'],
+                    ['Work', 11],
+                    ['Eat', 2],
+                    ['Commute', 2],
+                    ['Watch TV', 2],
+                    ['Sleep', 7]
+                ]);
+
+                var options = {
+                    title: 'COSTOS ESTABLECIMEINTO',
+                    is3D: true,
+                };
+
+                var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+                chart.draw(data, options);
+            }
+        </script>
+
+
+    </head>
+
+    <body>
+
+        <header class="row ">
+            <jsp:useBean id="facade" scope="page" class="Facade.Facade" />
+
+
+
+            <div><img  src="../images/logo.png"   class=""/></div>
+        </header>
+
+        <div class="container-fluyd row" >
+            <div class="col-xs-12" id="central" >
+                <center>
+                    <h2 class="verde hidden-xs">COSTOS DE <span class="naranja"> ESTABLECIMIENTO </span></h2>
+                    <h3 class="verde visible-xs">COSTOS DE <span class="naranja"> ESTABLECIMIENTO </span></h3>
+                </center>
+                <br><br>
+            </div>
+            <div class="col-xs-12">
+                <div class="col-md-2"></div>
+                <div class="col-md-4">
+                    <table class="table table-bordered tablaP">
+                        <tr>
+                            <td><b>Total Correcci&oacute;n Suelos</b></td>
+                            <td>$</td>
+
+                        </tr>
+                        <tr>
+                            <td><b>Total Nivelaci&oacute;n Suelos</b></td>
+                            <td>$</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total Preparaci&oacute;n Suelo</b></td>
+                            <td>$</td>
+                        </tr>
+                        <tr>
+                            <td><b>Total Siembra Coberturas</b></td>
+                            <td>$</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-4">
+                    <table class="table table-bordered tablaP">
+                        <tr>
+                            <td><b>Total Palmas Para Siembra</b></td>
+                            <td>$</td>
+
+                        </tr>
+                        <tr>
+                            <td><b>Total Siembra De Palma</b></td>
+                            <td>$</td>
+                        </tr>
+                        <tr>
+                            <td><b>Otros</b></td>
+                            <td>$</td>
+                        </tr>                        
+                    </table>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+
+            <div class="col-md-12">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <table class="table table-bordered tablaP">
+                        <tr>
+                            <td><b>TOTAL COSTOS ESTABLECIMIENTO</b></td>
+                            <td>$</td>
+                        </tr>                                          
+                    </table>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+
+
+            <div class="col-md-12">
+                <div class="col-md-3"></div>
+                <div class="col-md-5">
+                    <div id="piechart_3d" style="width: 900px; height: 500px;"></div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            
+            <center><input type="button" value="IMPRMIR" onClick="window.print()"></center>
+        </div>
+
+
+
+
+
+
+        <footer class="z-index-3">
+
+            <div class="icon_box"> 
+
+                <a href="http://ingsistemas.ufps.edu.co/"> <img src="../images/is-icon.png"/></a>
+                <a href="http://www.ufps.edu.co/ufps/index.php"><img src="../images/ufps-icon.png"/></a>
+
+
+            </div>
+
+        </footer>
+
+    </body>
+
+</html>
